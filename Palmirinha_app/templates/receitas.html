@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: rgb(83, 77, 77);
+        }
+    </style>
+    <h1>Receitas da Palmirinha!</h1>
+    <!--tags de templates-->
+    <ul>
+        {% for receita in receitas %}
+            <li><a href="/receita/{{ receita.id }}">{{ receita.nome }}</a> ({{receita.dificuldade }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

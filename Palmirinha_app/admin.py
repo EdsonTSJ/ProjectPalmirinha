@@ -15,3 +15,5 @@ class CategoriaAdmin(admin.ModelAdmin):
 
 admin.site.register(Receita, ReceitaAdmin)
 admin.site.register(Categoria, CategoriaAdmin)
+
+

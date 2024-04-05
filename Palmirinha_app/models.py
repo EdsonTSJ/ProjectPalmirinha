@@ -28,3 +28,4 @@ class Receita(models.Model):
     def __str__(self):
         return self.nome
 #HELP_TEXT
+#CRUD
